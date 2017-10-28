@@ -6,7 +6,6 @@ class RemarkSearch {
     if (options == null) options = {};
     if (options.position == null) options.position = 'top-right';
     if (options.caseSensitive == null) options.caseSensitive = false;
-    if (options.separateWordSearch == null) options.separateWordSearch = false;
 
     this.options = options;
 
@@ -167,8 +166,10 @@ class RemarkSearch {
     var instance = new Mark(context);
 
     instance.mark(term, {
+      "element": "span",
+      "className": "match",
       "caseSensitive": this.options.caseSensitive,
-      "separateWordSearch": this.options.separateWordSearch,
+      "separateWordSearch": false,
       "each": function(match){
         self.matches.push(match);
       },
@@ -220,3 +221,4 @@ class RemarkSearch {
   }
 
 }
+
