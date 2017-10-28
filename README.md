@@ -14,13 +14,14 @@ A quick hack to add search capabilities to [remark](https://github.com/gnab/rema
 
 ```javascript
 window.addEventListener('load', function() {
-  RemarkSearch.create({'position': 'top-right', 'caseSensitive' : true});
+  RemarkSearch.create({'position': 'top-right', 'caseSensitive' : true, 'showIcon': true});
 });
 ```
 
 **Options**:
   * **position**: top-left, top-right, bottom-left or bottom-right.
   * **caseSensitive**: true or false.
+  * **showIcon**: true or false.
 
 **Colors**:
 
