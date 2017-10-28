@@ -21,3 +21,9 @@ window.addEventListener('load', function() {
 **Options**:
   * **position**: top-left, top-right, bottom-left or bottom-right.
   * **caseSensitive**: true or false.
+
+**Screenshot**:
+
+<p align="center">
+<img src="https://cdn.pbrd.co/images/GQWEGvX.png">
+</p>
