@@ -4,6 +4,9 @@ A quick hack to add search capabilities to [remark](https://github.com/gnab/rema
 
 **Dependencies**: 
   * [mark.js](https://markjs.io/)
+  * [Font Awesome](http://fontawesome.io/)
+
+**Demonstration**: https://web.fe.up.pt/~arestivo/remark.search/
 
 **Usage**: 
 
