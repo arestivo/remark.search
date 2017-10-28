@@ -30,9 +30,12 @@ div.search #search-next{
 }
 
 span.match.current-match {
-  background-color: cyan;
+  background-color: #26f944;
 }
 
 span.match {
-  background-color: yellow;
+  padding: 1px;
+  background-color: #26dcf9;
+  color: black;
 }
+
