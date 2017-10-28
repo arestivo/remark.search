@@ -18,6 +18,14 @@ window.addEventListener('load', function() {
 });
 ```
 
+**Keyboard Shortcuts**:
+
+  * **Ctrl+F**: Open search bar (or just click on icon if visible) 
+  * **Esc**: Close search bar (or just click on icon)
+  * **Enter**: Search
+  * **F3**: Next match or search
+  * **Shift+F3**: previous match or search
+
 **Options**:
   * **position**: top-left, top-right, bottom-left or bottom-right.
   * **caseSensitive**: true or false.
