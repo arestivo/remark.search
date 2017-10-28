@@ -14,9 +14,15 @@ A quick hack to add search capabilities to [remark](https://github.com/gnab/rema
 
 ```javascript
 window.addEventListener('load', function() {
-  RemarkSearch.create({'position': 'top-right', 'caseSensitive' : true, 'showIcon': true});
+  RemarkSearch.create({'position': 'top-right', 'caseSensitive' : false, 'showIcon': false}, 'autoSearch': true});
 });
 ```
+
+**Options**:
+  * **position**: top-left, top-right, bottom-left or bottom-right (position of search box).
+  * **caseSensitive**: true or false.
+  * **showIcon**: true or false (show icon to open/close search).
+  * **autoSearch**: true or false (search on each keystroke).
 
 **Keyboard Shortcuts**:
 
@@ -25,11 +31,6 @@ window.addEventListener('load', function() {
   * **Enter**: Search
   * **F3**: Next match or search
   * **Shift+F3**: previous match or search
-
-**Options**:
-  * **position**: top-left, top-right, bottom-left or bottom-right.
-  * **caseSensitive**: true or false.
-  * **showIcon**: true or false.
 
 **Colors**:
 
