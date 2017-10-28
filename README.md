@@ -6,7 +6,7 @@ A quick hack to add search capabilities to [remark](https://github.com/gnab/rema
   * [mark.js](https://markjs.io/)
   * [Font Awesome](http://fontawesome.io/)
 
-**Demonstration**: https://web.fe.up.pt/~arestivo/remark.search/
+**Demonstration**: https://web.fe.up.pt/~arestivo/remark.search/ (try pressing Ctrl+F, searching for slide and then F3)
 
 **Usage**: 
 
