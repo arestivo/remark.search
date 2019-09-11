@@ -70,7 +70,12 @@ class RemarkSearch {
   setUpKeyListener() {
     let self = this;
     document.addEventListener('keydown', function(event) {
-      if (event.ctrlKey && event.key == 'f') {
+  	  const isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
+	  
+      if (
+  		  ( isMac && event.metaKey || !isMac && event.ctrlKey ) 
+  		  && event.key == 'f'
+  	  ) {
         event.preventDefault();
         self.openSearch();
         return false;
