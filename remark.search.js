@@ -8,6 +8,7 @@ class RemarkSearch {
     if (options.caseSensitive == null) options.caseSensitive = false;
     if (options.showIcon == null) options.showIcon = false;
     if (options.autoSearch == null) options.autoSearch = true;
+	if (options.slideshow != null) this.slideshow = options.slideshow;
 
     this.options = options;
 
@@ -70,12 +71,13 @@ class RemarkSearch {
   setUpKeyListener() {
     let self = this;
     document.addEventListener('keydown', function(event) {
-  	  const isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
+		
+	  const isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
 	  
       if (
-  		  ( isMac && event.metaKey || !isMac && event.ctrlKey ) 
-  		  && event.key == 'f'
-  	  ) {
+		  ( isMac && event.metaKey || !isMac && event.ctrlKey ) 
+		  && event.key == 'f'
+	  ) {
         event.preventDefault();
         self.openSearch();
         return false;
@@ -116,7 +118,7 @@ class RemarkSearch {
     let self = this;
     let input = this.div.querySelector('form input');
     input.addEventListener('focus', function(event) {
-      slideshow.pause();
+      self.slideshow.pause();
     });
     input.addEventListener('blur', function(event) {
       slideshow.resume();
@@ -237,8 +239,8 @@ class RemarkSearch {
       index++;
     };
 
-    if (slideshow.getCurrentSlideIndex() + 1 != index)
-      slideshow.gotoSlide(index);
+    if (self.slideshow.getCurrentSlideIndex() + 1 != index)
+      self.slideshow.gotoSlide(index);
 
     return false;
   }
