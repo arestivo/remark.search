@@ -8,7 +8,16 @@ class RemarkSearch {
     if (options.caseSensitive == null) options.caseSensitive = false;
     if (options.showIcon == null) options.showIcon = false;
     if (options.autoSearch == null) options.autoSearch = true;
-	if (options.slideshow != null) this.slideshow = options.slideshow;
+	if (options.slideshow != null) 
+	{
+		// Passing slideshow object as part of the options
+		this.slideshow = options.slideshow;
+	}
+	else
+	{
+		// Original behaviour, slideshow is a global var
+		this.slideshow = slideshow;
+	}
 
     this.options = options;
 
